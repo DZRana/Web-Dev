@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="TributeToBarb" content="Tribute to Barbara from Stranger Things">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>RIP Barbara Holland</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#name").addClass("animated infinite flash");
+        $("button").click(function(){
+          $("body").addClass("flip");
+          $("img").attr("src", "https://lyriquediscorde.files.wordpress.com/2016/07/10788670_stranger-things-gears-up-for-a-showdown_tf5c709bd.jpg?w=760");
+          $(".caption").text("NOOOOOOOOOOO!");
+          $("img").addClass("flip");
+          $(".caption").addClass("flip");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron text-center">
+
+        <header>
+          <h1 id="name">Barbara Holland</h1>
+          <h2><em>The best of us</em></h2>
+        </header>
+
+        <main>
+          <div class="img-thumbnail">
+            <a href="http://www.imdb.com/title/tt4574334/"><img class= "img-responsive center-block" src="http://vignette2.wikia.nocookie.net/stranger-things/images/3/37/Barb.jpg/revision/latest?cb=20160727230936" alt="Barbara Holland Judging"></a>
+            <div class="caption">
+              <p>Barbara with an expression of amused disbelief over Nancy's naivety in regards to Steve Harrington's true motives for the party.</p>
+            </div>
+          </div>       
+          <h3>Here's a time line of Barbara Holland's life:</h3>
+          <div class="timeline">
+            <ul>
+              <li><b>1983</b> - Alive
+              <li><b>1983</b> - Dead
+            </ul>
+          </div>
+          <blockquote>"Nancy!"<footer><cite>Barbara Holland bout to get ate</footer></cite></blockquote>
+          <div class="row">
+            <div class="col-md-8">
+              <p>Take a look at what it was like in the Upside Down for Barb!</p>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-danger">Upside Down</button>
+            </div>
+          </div>
+        </main>  
+
+        <footer>
+
+        </footer>
+
+      </div>
+    </div>
+  </body>
+</html>
