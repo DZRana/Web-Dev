@@ -1,6 +1,10 @@
 $(document).ready(function() {
 	var html = "";
 	var randomHex = '#'+ Math.floor(Math.random()*16777215).toString(16);
+    var quote = "";
+    var author = "";
+    var hrefQuoteString = "";
+
 	$.ajax ({
     	url: 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous', // The URL to the API. You can get this in the API page of the API you intend to consume
     	type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
@@ -12,8 +16,10 @@ $(document).ready(function() {
 			$("body").css("background-color", randomHex);
 			$(".target").css("background-color", randomHex);
 			$(".btn-twitter").css("background-color", randomHex);
-    		html += "<h1><b>\"</b>" + data.quote + "</h1>";
-    		html += "<h2>-" + data.author + "</h2>";
+            quote = data.quote;
+            author = data.author;
+    		html += "<h1><b>\"</b>" + quote + "</h1>";
+    		html += "<h2>-" + author + "</h2>";
     		$("#currentQuote").html(html);
     	},
     	error: function(err) { alert(err); },
@@ -35,8 +41,10 @@ $(document).ready(function() {
 				$("body").css("background-color", randomHex);
 				$(".target").css("background-color", randomHex);
 				$(".btn-twitter").css("background-color", randomHex);
-    			html += "<h1><b>\"</b>" + data.quote + "</h1>";
-    			html += "<h2>-" + data.author + "</h2>";
+                quote = data.quote;
+                author = data.author;
+    			html += "<h1><b>\"</b>" + quote + "</h1>";
+    			html += "<h2>-" + author + "</h2>";
     			$("#currentQuote").html(html);  			
     		},
     		error: function(err) { alert(err); },
@@ -45,4 +53,9 @@ $(document).ready(function() {
     		}
 		});
 	});
+    $(".btn-twitter").click(function() {
+        hrefQuoteString = "https://twitter.com/share?text=" + "\"" + quote + "\" " + author;
+        hrefQuoteString += " %23quote";
+        $("a").attr("href", hrefQuoteString);
+    });
 });
