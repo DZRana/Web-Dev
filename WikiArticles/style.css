@@ -1,0 +1,29 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+
+body {
+  background-color: #092B40;
+  color:white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+#links {
+  background-color: grey;
+  line-height: 35px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 400px;
+}
