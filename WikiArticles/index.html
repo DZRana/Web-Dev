@@ -9,20 +9,14 @@
     <script src="myJS.js"></script>
   </head>
   <body>
-    <div class="container-fluid text-center" id="links">
+    <div class="container-fluid text-center" id="allContent">
       <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random article</a>
       <p>or</p>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="input-group">
-            <input type="text" class="form-control" id="query">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Search</button>
-            </span>
-          </div>
-        </div>
+      <div id="iconBoxAndSearch">
+        <button class="btn" id="mGlass"><i class="fa fa-search"></i></button>
       </div>
-      <p>Search for one!</p>
+      <div id="results"></div>
+      <p id="instruct">Search for one!</p>
     </div>
   </body>
 </html
