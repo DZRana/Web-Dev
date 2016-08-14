@@ -37,7 +37,7 @@ $(document).ready(function() {
 			$("#query").addClass("vanishOut");
 			setTimeout("$('#iconBoxAndSearch').html(\"<button class='btn' id='mGlass'><i "
 				     + "class='magictime vanishIn fa fa-search'></i></button>\");",500);
-			$("#instruct").css("display", "inline");
+			$("#instruct").css("display", "initial");
 			$("#allContent").css("margin-top", "400px");
 			$("#links").remove();
 		}
