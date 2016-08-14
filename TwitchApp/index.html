@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="TwitchApp" content="View Online/Offline Twitch Streams">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Who's Streaming?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="myJS.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid" id="allContent">
+
+      <header>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <h1>TWITCH STREAMERS</h1>
+          </div>
+          <div class="col-md-6" id="statusButtons">
+            <button class="btn btn-warning" id="btnAll">ALL</button>
+            <button class="btn btn-success" id="btnOn">ONLINE</button>
+            <button class="btn btn-danger" id="btnOff">OFFLINE</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="list-group" id="listOn">
+          <div id="statusOn"></div>
+        </div>
+        <div class="list-group" id="listOff">
+          <div id="statusOff"></div>
+        </div>
+      </main>
+
+    </div>
+  </body>
+</html
