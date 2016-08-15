@@ -16,7 +16,6 @@ $(document).ready(function() {
 					  	  + "&format=json&prop=extracts&generator=search&exsentences=1"
 					  	  + "&exlimit=20&exintro=1&explaintext=1&gsrlimit=10&origin=*&gsrsearch="
 					  	  + queryStr;
-			console.log(queryLink);
 			$.getJSON(queryLink, function(data) {
 				$("#instruct").css("display", "none");
 				$("#allContent").css("margin-top", "-5px");
