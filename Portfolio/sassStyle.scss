@@ -1,0 +1,60 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+$bg-color-body: grey;
+$bg-color-about: darkgrey;
+$bg-color-portfolio: white;
+$primary-color: white;
+$secondary-color: grey;
+$font-stack: "Open Sans", sans-serif;
+$default-margin: auto;
+$nav-margin: 100px;
+$img-px: 200px;
+$width: 75%;  
+
+body {
+  padding-top: 30px;
+  background-color: $bg-color-body;
+	color: $primary-color;
+	font-family: $font-stack;
+}
+
+nav {
+  .navbar-brand {
+    margin-left: $nav-margin;
+  }
+  .navbar-right {
+    margin-right: $nav-margin;
+  }
+}
+
+#about {
+  background-color: $bg-color-about;
+  width: $width;
+  margin: $default-margin;
+  padding-top: 50px;
+}
+
+.img-circle {
+  height: $img-px;
+  width: $img-px;
+}
+
+#portfolio {
+  background-color: $bg-color-portfolio;
+  color: $secondary-color;
+  width: $width;
+  margin: $default-margin;
+  margin-top: -18px;
+}
+
+.fa-github {
+  font-size: 50px;
+  margin-top: -20px;
+}
+
+#questions {
+    margin: 0 $default-margin;
+}

@@ -1,0 +1,40 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+body {
+  padding-top: 30px;
+  background-color: grey;
+  color: white;
+  font-family: "Open Sans", sans-serif; }
+
+nav .navbar-brand {
+  margin-left: 100px; }
+nav .navbar-right {
+  margin-right: 100px; }
+
+#about {
+  background-color: darkgrey;
+  width: 75%;
+  margin: auto;
+  padding-top: 50px; }
+
+.img-circle {
+  height: 200px;
+  width: 200px; }
+
+#portfolio {
+  background-color: white;
+  color: grey;
+  width: 75%;
+  margin: auto;
+  margin-top: -18px; }
+
+.fa-github {
+  font-size: 50px;
+  margin-top: -20px; }
+
+#questions {
+  margin: 0 auto; }
+
+/*# sourceMappingURL=sassStyle.css.map */
