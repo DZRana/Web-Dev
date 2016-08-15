@@ -1,0 +1,59 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Slabo+27px";
+
+$font-stack: "Slabo 27px", serif;
+$margin-jumbotron: 5em 5em 5em 10em;
+$padding-jumbotron: 10em 2em 10em 2em;
+$bg-color-jumbotron: white;
+$size-bold: 200%;
+$color-button: white;
+$color-button-hover: white;
+$opacity-button-hover: 0.5;
+$margin-top-button: .6em;
+$fa-twitter-color: white;
+$fa-font-size: 30px;
+
+body {
+  font-family: $font-stack;
+}
+
+.jumbotron {
+  margin: $margin-jumbotron;
+  padding: $padding-jumbotron;
+  min-width: 25%;
+  max-width: 80%;
+  background-color: $bg-color-jumbotron;
+}
+
+b {
+  font-size: $size-bold;
+}
+
+h2 {
+  text-align: right;
+}
+
+button {
+  color: $color-button;
+  margin-top: $margin-top-button;
+}
+
+.target:hover {
+  color: $color-button-hover;
+  opacity: $opacity-button-hover;
+}
+
+.target:focus {
+  color:$color-button-hover;
+}
+
+.btn-twitter:hover {
+  opacity: $opacity-button-hover;
+}
+
+.fa-twitter {
+  color: $fa-twitter-color;
+  font-size: $fa-font-size;
+}

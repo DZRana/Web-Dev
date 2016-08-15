@@ -1,0 +1,33 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css?family=Taviraj";
+body {
+  background-color: #7f7f7f;
+  font-family: "Taviraj", serif; }
+
+#allContent {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #660066;
+  padding: 0;
+  border-radius: 10px; }
+
+header {
+  background-color: #800080;
+  color: white;
+  border-radius: 10px;
+  margin: 10px 10px 20px 10px; }
+
+.list-group-item {
+  margin: 0px 5px 0px 5px; }
+
+#statusButtons {
+  margin: 50px 0px 0px 0px; }
+
+img {
+  width: 60px; }
+
+h2 {
+  font-size: 20px; }
+
+/*# sourceMappingURL=sassStyle.css.map */

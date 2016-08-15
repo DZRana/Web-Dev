@@ -1,0 +1,57 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css?family=Taviraj";
+
+$bg-color-body: #7f7f7f;
+$font-stack: "Taviraj", serif;
+$width-allContent: 600px;
+$margin-allContent: 0 auto;
+$margin-top-allContent: 20px;
+$bg-color-allContent: #660066;
+$padding-allContent: 0;
+$border-radius-allContent: 10px;
+$bg-color-header: #800080;
+$color-header: white;
+$border-radius-header: 10px;
+$margin-header: 10px 10px 20px 10px;
+$margin-list-group-item: 0px 5px 0px 5px;
+$margin-statusButtons: 50px 0px 0px 0px;
+$width-img: 60px;
+$font-size-h2: 20px;
+
+
+body {
+  background-color: $bg-color-body;
+  font-family: $font-stack;
+}
+
+#allContent {
+  width: $width-allContent;
+  margin: $margin-allContent;
+  margin-top: $margin-top-allContent;
+  background-color: $bg-color-allContent;
+  padding: $padding-allContent;
+  border-radius: $border-radius-allContent;
+}
+
+header {
+  background-color: $bg-color-header;
+  color: $color-header;
+  border-radius: $border-radius-header;
+  margin: $margin-header;
+}
+
+.list-group-item {
+  margin: $margin-list-group-item;
+}
+
+#statusButtons {
+  margin: $margin-statusButtons;
+}
+
+img {
+  width: $width-img;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}

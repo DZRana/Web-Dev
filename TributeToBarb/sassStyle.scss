@@ -1,0 +1,81 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+@import "https://fonts.googleapis.com/css?family=Eczar";
+
+$bg-color-body: #FF0009;
+$flip-width: 100%;
+$flip-height: 100%;
+$margin-jumbotron: 60px 60px 60px 60px;
+$border-radius-jumbotron: 10px;
+$bg-color-jumbotron: black;
+$font-stack: "Eczar", serif;
+$bg-color-img-tnail: #262626;
+$margin-img-tnail: 0px 400px 0px 400px;
+$margin-caption-p: 15px 20px 0px 20px;
+$font-size-caption-p: 18px;
+$margin-h3: 50px 0px 0px 0px;
+$display-timeline: table;
+$margin-timeline: auto;
+$bg-color-blockquote: #262626;
+$margin-footer-p: 20px 0px 0px 0px;
+
+@mixin flip-degrees($radius) {
+  -moz-transform: rotate($radius);
+  -webkit-transform: rotate($radius);
+  -ms-transform: rotate($radius);
+  -o-transform: rotate($radius);
+  transform: rotate($radius);
+}
+
+body {
+  color: $bg-color-body;
+}
+
+.flip {
+  width: $flip-width;
+  height: $flip-height;
+  @include flip-degrees(180deg);
+}
+
+.jumbotron {
+  margin: $margin-jumbotron;
+  border-radius: $border-radius-jumbotron;
+  background-color: $bg-color-jumbotron;
+  font-family: $font-stack;
+}
+
+.img-thumbnail {
+  background-color: $bg-color-img-tnail;
+  margin: $margin-img-tnail;
+}
+
+.caption {
+  p {
+    margin: $margin-caption-p;
+    font-size: $font-size-caption-p;
+  }
+}
+
+h3 {
+  margin: $margin-h3;
+}
+
+.timeline {
+  display: $display-timeline;
+  margin: $margin-timeline;
+}
+
+blockquote {
+  background-color: $bg-color-blockquote;
+  @extend .timeline;
+}
+
+footer {
+  p {
+    margin: $margin-footer-p;
+  }
+}
+
+button:hover {
+  @include flip-degrees(180deg);
+}

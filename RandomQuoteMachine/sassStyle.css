@@ -2,42 +2,38 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css?family=Slabo+27px";
-
 body {
-  font-family: 'Slabo 27px', serif;
-}
+  font-family: "Slabo 27px", serif; }
+
 .jumbotron {
   margin: 5em 5em 5em 10em;
   padding: 10em 2em 10em 2em;
   min-width: 25%;
   max-width: 80%;
-  background-color: white;
-}
+  background-color: white; }
 
 b {
-  font-size: 200%;
-}
+  font-size: 200%; }
+
 h2 {
-  text-align: right;
-}
+  text-align: right; }
+
 button {
   color: white;
-  margin-top: .6em;
-}
+  margin-top: 0.6em; }
 
 .target:hover {
   color: white;
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
 .target:focus {
-  color: white;
-}
+  color: white; }
 
 .btn-twitter:hover {
-  opacity: 0.5;
-}
+  opacity: 0.5; }
+
 .fa-twitter {
   color: white;
-  font-size: 30px;
-}
+  font-size: 30px; }
+
+/*# sourceMappingURL=sassStyle.css.map */

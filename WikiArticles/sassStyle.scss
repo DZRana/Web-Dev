@@ -1,0 +1,58 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css";
+@import "https://fonts.googleapis.com/css?family=Merriweather";
+
+$bg-color-body: #092B40;
+$color-body: white;
+$font-stack: "Merriweather", serif;
+$text-decoration-a: none;
+$color-a: white;
+$line-height-allContent: 35px;
+$width-allContent: 400px;
+$margin-allContent: 0 auto;
+$bg-button: none;
+$bg-color-button-hover: white;
+$font-size-fa: 50px;
+
+body {
+  background-color: $bg-color-body;
+  color: $color-body;
+  font-family: $font-stack;
+}
+
+a {
+  text-decoration: $text-decoration-a;
+  color: $color-a;
+}
+
+a:hover {
+  @extend a;
+}
+
+a:focus {
+  @extend a;
+}
+
+#allContent {
+  line-height: $line-height-allContent;
+  width: $width-allContent;
+  margin: $margin-allContent;
+  margin-top: 400px;
+}
+
+#results {
+  margin-top: 10px;
+}
+
+button {
+  background: $bg-button;
+}
+
+button:hover {
+  background-color: $bg-color-button-hover;
+}
+
+.fa-search {
+  font-size: $font-size-fa;
+}
