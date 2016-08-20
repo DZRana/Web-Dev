@@ -1,0 +1,19 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+
+$primary-color: white;
+$bg-color-body: grey;
+$default-margin: 0 auto;
+$border-timer: thin solid green;
+$border-radius-timer: 50%;
+
+body {
+  color: $primary-color;
+  background-color: $bg-color-body;
+  margin: $default-margin;
+  width: 100px;
+}
+
+#timer {
+  border: $border-timer;
+  border-radius: $border-radius-timer;
+}

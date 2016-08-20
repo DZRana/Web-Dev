@@ -1,0 +1,12 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+body {
+  color: white;
+  background-color: grey;
+  margin: 0 auto;
+  width: 100px; }
+
+#timer {
+  border: thin solid green;
+  border-radius: 50%; }
+
+/*# sourceMappingURL=style.css.map */
