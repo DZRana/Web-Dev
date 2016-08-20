@@ -1,40 +1,48 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
-@import "https://fonts.googleapis.com/css?family=Open+Sans";
-body {
-  padding-top: 30px;
-  background-color: grey;
+#parent-container {
   color: white;
-  font-family: "Open Sans", sans-serif; }
+  margin: 0;
+  padding: 0; }
 
-nav .navbar-brand {
-  margin-left: 100px; }
-nav .navbar-right {
-  margin-right: 100px; }
+.navbar {
+  border-bottom: 5px solid #ff5722; }
+
+.bg-img {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  background: url("images/html-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  width: 100vw;
+  height: 100vh; }
+
+#main-content {
+  position: relative; }
+
+#name {
+  height: 100vh;
+  padding-top: 30vh;
+  line-height: 400px;
+  text-shadow: 5px 5px black; }
+  #name h1 {
+    font-size: 500%; }
+  #name h2 {
+    padding-top: 25px; }
+
+#down:hover {
+  -webkit-animation: bounce 1s;
+  -moz-animation: bounce 1s;
+  -o-animation: bounce 1s;
+  animation: bounce 1s; }
 
 #about {
-  background-color: darkgrey;
-  width: 75%;
-  margin: auto;
-  padding-top: 50px; }
-
-.img-circle {
-  height: 200px;
-  width: 200px; }
-
-#portfolio {
-  background-color: white;
-  color: grey;
-  width: 75%;
-  margin: auto;
-  margin-top: -18px; }
-
-.fa-github {
-  font-size: 50px;
-  margin-top: -20px; }
-
-#questions {
-  margin: 0 auto; }
+  background-color: #ff5722; }
+  #about img {
+    padding: 20px 0px 20px 0px;
+    width: 40%; }
 
 /*# sourceMappingURL=sassStyle.css.map */

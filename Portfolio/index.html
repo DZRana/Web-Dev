@@ -5,10 +5,10 @@
     <meta name="Portfolio" content="Portfolio of Danzel Rana's Projects">
     <link rel="stylesheet" type="text/css" href="sassStyle.css">
     <title>Danzel Rana</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="parent-container">
+      <div class="bg-img"></div>
       <!-- NAV BAR HERE -->
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-header">
@@ -19,90 +19,53 @@
             <span class="icon-bar"></span>
           </button>
           <!-- Making Navbar Collapsible END -->
-          <a class="navbar-brand" href="file:///C:/Users/danze/workspace/Web%20Dev/Web-Dev/Portfolio/index.html">Danzel Rana</a>
+          <a class="navbar-brand" href="#name">Danzel Rana</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#about">About</a>
-            <li><a href="#portfolio">Portfolio</a>
-            <li><a href="#contact">Contact</a>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
 
-      <header>
-        <div class="text-center" id="about">
-          <div class="row">
-            <div class="col-md-8">
-              <h1>Hey, there! My name is Danzel and I'm a software engineer and aspiring web developer. I graduated from California State Polytechnic University, Pomona with a Bachelor's degree in Computer Science and am focusing my career on Full Stack Web Development.</h1>
-              <h2>Web Developer - Software Engineer</h2>
-            </div>
-            <div class="col-md-4">
-              <img src="http://placeimg.com/400/400/any" class="img-circle">
-            </div>
-        </div>
-      </header>
-
-      <main>
-        <div class="text-center" id="portfolio">
-          <h3>Portfolio</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <img src="http://placeimg.com/400/400/any" class="img-thumbnail" alt="pic1"> 
-            </div>
-            <div class="col-md-6">
-              <img src="http://placeimg.com/400/400/any" class="img-thumbnail" alt="pic1"> 
+      <div id="main-content">
+        <header>
+          <div class="text-center" id="name">
+            <h1>Danzel Rana</h1>
+            <h2>Web Developer - Software Engineer</h2>
+            <a href="#about"><img src="images/Double Down-48.png" class="animated bounce" title="Double Down" width="24" id="down"></a>
+          </div>
+        </header>
+    
+        <main>
+          <div id="about">
+            <div class="row">
+              <div class="text-right col-md-6">
+                <img class="img-circle" src="http://placeimg.com/400/400/tech">
+              </div>
+              <div class="text-left col-md-6">
+                <h3>testing</h3>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <img src="http://placeimg.com/400/400/any" class="img-thumbnail" alt="pic1"> 
-            </div>
-            <div class="col-md-6">
-              <img src="http://placeimg.com/400/400/any" class="img-thumbnail" alt="pic1"> 
-            </div>
+  
+          <div class="text-center" id="portfolio">
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <img src="http://placeimg.com/400/400/any" class="img-thumbnail" alt="pic1"> 
-            </div>
-            <div class="col-md-6">
-              <img src="http://placeimg.com/400/400/any" class="img-thumbnail" alt="pic1"> 
-            </div>
+  
+          <div id="contact">
           </div>
-        </div>
-
-        <div id="contact">
-          <h4 class="text-center">Contact Me</h4>
-          <div class="row">
-            <div class="col-md-6">
-              <form action="#">
-                <input type="text" class="form-control" placeholder="Name" required>
-                <input type="text" class="form-control" placeholder="Email Address" required>
-                <input type="text" class="form-control" placeholder="Phone Number" required>
-                <input type="text" class="form-control" placeholder="Message" required>
-                <button type="submit">Send</button>
-              </form>
-            </div>
-            <div class="col-md-6" id="questions">
-              <p>If you have any questions for me, shoot me an email and I'll get back to you as soon as I can.</p>
-            </div>
+        </main>
+  
+        <footer>
+          <div class="row text-center">
           </div>
-        </div>
-      </main>
-
-      <footer>
-        <div class="row text-center">
-          <div class="col-md-6">
-            <p>ABOUT THIS PAGE</p>
-            <p>Made with HTML5, CSS3, and Bootstrap 3.
-          </div>
-          <div class="col-md-6">
-            <p>WEB PRESENCE</p>
-            <a href="http://www.github.com/dzrana" class="btn btn-social-icon btn-github" target="_blank"><span class="fa fa-github"></span></a>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
