@@ -1,12 +1,15 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+@import "https://fonts.googleapis.com/css?family=Noticia+Text";
 
 
 $text-color: white;
 $nav-border: 5px solid #ff5722; 
+$font-stack: "Noticia Text", serif;
 
 #parent-container {
   color: $text-color;
+  font-family: $font-stack;
   margin: 0;
   padding: 0;
 }
@@ -62,9 +65,17 @@ $nav-border: 5px solid #ff5722;
 }
 
 #about {
+  overflow-x: hidden;
+  height: 50vh;
   background-color: #ff5722;
+  padding: 100px 0px 50px 0px;
   img {
-    padding: 20px 0px 20px 0px;
-    width: 40%;
+    width: 30%;
   }
+}
+
+#skill {
+  overflow-x: hidden;
+  height: 50vh;
+  background-color: skyblue;
 }
