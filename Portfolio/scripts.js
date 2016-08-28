@@ -15,11 +15,4 @@ $(document).ready(function() {
 	});
 
 	$("body").scrollspy();
-
-	var html = "";
-	for (var i = 0; i < 25; i++) {
-		html += "<h1>Danzel Rana</h1>";
-	}	
-	$("#portfolio").html(html);
-	$("#contact").html(html);
 });

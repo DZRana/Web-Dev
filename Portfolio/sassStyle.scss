@@ -6,6 +6,8 @@
 $text-color: white;
 $nav-border: 5px solid #ff5722; 
 $font-stack: "Noticia Text", serif;
+$about-bg-color: #ff5722;
+$portfolio-bg-color: #607d8b;
 
 #parent-container {
   color: $text-color;
@@ -66,9 +68,10 @@ $font-stack: "Noticia Text", serif;
 
 #about {
   overflow-x: hidden;
+  overflow-y: hidden;
   height: 50vh;
-  background-color: #ff5722;
-  padding: 100px 0px 50px 0px;
+  background-color: $about-bg-color;
+  padding: 80px 0px 50px 0px;
   img {
     width: 30%;
   }
@@ -77,5 +80,22 @@ $font-stack: "Noticia Text", serif;
 #skill {
   overflow-x: hidden;
   height: 50vh;
-  background-color: skyblue;
+}
+
+#portfolio {
+  overflow-x: hidden;
+  background-color: $portfolio-bg-color;
+  height: 100vh;
+  #row1 {
+    padding-top: 20vh;
+  }
+  #row2 {
+    padding-top: 50vh;
+  }
+}
+
+#contact {
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: grey;
 }
