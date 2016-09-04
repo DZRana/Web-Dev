@@ -77,10 +77,19 @@ $portfolio-bg-color: #607d8b;
   }
 }
 
-#skill {
+#skills {
   overflow-x: hidden;
   height: 50vh;
 }
+.glyphicon {
+  font-size: 500%;
+}
+
+.descriptions {
+  margin-top: 80px;
+  font-size: 250%;
+}
+
 
 #portfolio {
   overflow-x: hidden;
