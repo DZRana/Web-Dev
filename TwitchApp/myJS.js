@@ -16,7 +16,6 @@ $(document).ready(function() {
 			$.getJSON(streamerApiURL, function(streamerData) {		
 				streamerName = streamerData._links.channel.substr(38);
 				streamerURL = "https://www.twitch.tv/" + streamerName;
-				console.log(streamerData);
 				if (streamerData.stream !== null) {
 					imgLink = streamerData.stream.channel.logo;
 					streamerStatus = "<strong>" + streamerData.stream.game + "</strong>: " 
