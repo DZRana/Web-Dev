@@ -7,7 +7,7 @@ $text-color: white;
 $nav-border: 5px solid #ff5722; 
 $font-stack: "Noticia Text", serif;
 $about-bg-color: #ff5722;
-$portfolio-bg-color: #607d8b;
+$portfolio-bg-color: grey;
 
 #parent-container {
   color: $text-color;
@@ -32,7 +32,7 @@ $portfolio-bg-color: #607d8b;
 .bg-img {
   -webkit-filter: blur(3px);
   filter: blur(3px);
-  background: url("images/html-bg.jpg") no-repeat center center fixed; 
+  background: url("images/bg/html-bg.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -96,15 +96,28 @@ $portfolio-bg-color: #607d8b;
   background-color: $portfolio-bg-color;
   height: 100vh;
   #row1 {
-    padding-top: 20vh;
+    padding-top: 10vh;
   }
   #row2 {
-    padding-top: 50vh;
+    padding-top: 40vh;
   }
+  img {
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+  }
+}
+
+.thumb:hover {
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+  opacity: 0.5;
 }
 
 #contact {
   overflow-x: hidden;
   height: 100vh;
-  background-color: grey;
+  background-color: #607d8b;
 }

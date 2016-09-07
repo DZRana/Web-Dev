@@ -13,7 +13,7 @@
 .bg-img {
   -webkit-filter: blur(3px);
   filter: blur(3px);
-  background: url("images/html-bg.jpg") no-repeat center center fixed;
+  background: url("images/bg/html-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -63,16 +63,27 @@
 
 #portfolio {
   overflow-x: hidden;
-  background-color: #607d8b;
+  background-color: grey;
   height: 100vh; }
   #portfolio #row1 {
-    padding-top: 20vh; }
+    padding-top: 10vh; }
   #portfolio #row2 {
-    padding-top: 50vh; }
+    padding-top: 40vh; }
+  #portfolio img {
+    width: 600px;
+    height: 300px;
+    border-radius: 20px; }
+
+.thumb:hover {
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+  opacity: 0.5; }
 
 #contact {
   overflow-x: hidden;
   height: 100vh;
-  background-color: grey; }
+  background-color: #607d8b; }
 
 /*# sourceMappingURL=sassStyle.css.map */
