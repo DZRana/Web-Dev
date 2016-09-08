@@ -8,6 +8,7 @@ $nav-border: 5px solid #ff5722;
 $font-stack: "Noticia Text", serif;
 $about-bg-color: #ff5722;
 $portfolio-bg-color: grey;
+$footer-bg-color: #607d8b;
 
 #parent-container {
   color: $text-color;
@@ -21,11 +22,15 @@ $portfolio-bg-color: grey;
 }
 
 .navbar-brand {
-
+  margin-left: 150%;
+  font-size: 200%;
 }
 
 #myNavbar {
-
+  ul {
+    margin-right: 8%;
+    font-size: 120%;
+  }
 }
 
 
@@ -99,7 +104,7 @@ $portfolio-bg-color: grey;
     padding-top: 10vh;
   }
   #row2 {
-    padding-top: 40vh;
+    padding-top: 18vh;
   }
   img {
     width: 600px;
@@ -119,5 +124,30 @@ $portfolio-bg-color: grey;
 #contact {
   overflow-x: hidden;
   height: 100vh;
-  background-color: #607d8b;
+}
+
+#contactRow {
+  padding-top: 30vh;
+  h5 {
+    font-size: 200%;
+    padding-left: 25%;
+  }
+}
+
+.input-width {
+  width: 50%;
+}
+
+form {
+
+}
+
+#back {
+  padding-top: 20vh;
+  font-size: 200%;
+}
+
+footer {
+  overflow-x: hidden;
+  background-color: $footer-bg-color;
 }
