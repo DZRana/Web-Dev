@@ -1,6 +1,8 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
 @import "https://fonts.googleapis.com/css?family=Noticia+Text";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css";
 #parent-container {
   color: white;
   font-family: "Noticia Text", serif;
@@ -36,18 +38,16 @@
 #name {
   height: 100vh;
   padding-top: 30vh;
-  line-height: 400px;
-  text-shadow: 5px 5px black; }
+  line-height: 400px; }
   #name h1 {
-    font-size: 500%; }
+    font-size: 500%;
+    text-shadow: 5px 5px black; }
   #name h2 {
-    padding-top: 25px; }
-
-#down:hover {
-  -webkit-animation: bounce 1s;
-  -moz-animation: bounce 1s;
-  -o-animation: bounce 1s;
-  animation: bounce 1s; }
+    padding-top: 25px;
+    text-shadow: 5px 5px black; }
+  #name a {
+    color: white;
+    font-size: 50%; }
 
 #about {
   overflow-x: hidden;
@@ -74,12 +74,14 @@
   background-color: grey;
   height: 100vh; }
   #portfolio #row1 {
-    padding-top: 10vh; }
+    padding-top: 8vh; }
   #portfolio #row2 {
-    padding-top: 18vh; }
+    padding-top: 4vh; }
+  #portfolio #row3 {
+    padding-top: 4vh; }
   #portfolio img {
-    width: 600px;
-    height: 300px;
+    width: 500px;
+    height: 250px;
     border-radius: 20px; }
 
 .thumb:hover {
@@ -95,7 +97,7 @@
 
 #contactRow {
   padding-top: 30vh; }
-  #contactRow h5 {
+  #contactRow p {
     font-size: 200%;
     padding-left: 25%; }
 
@@ -103,11 +105,24 @@
   width: 50%; }
 
 #back {
-  padding-top: 20vh;
-  font-size: 200%; }
+  padding-top: 20vh; }
+  #back p {
+    font-size: 150%; }
+  #back a {
+    color: white;
+    font-size: 50%; }
 
 footer {
+  padding: 2vh 0 10vh 0;
   overflow-x: hidden;
-  background-color: #607d8b; }
+  background-color: #607d8b;
+  border-top: 5px solid #ff5722; }
+  footer h5 {
+    font-size: 200%; }
+  footer a {
+    margin-right: 5%; }
+
+.fa {
+  font-size: 300%; }
 
 /*# sourceMappingURL=sassStyle.css.map */

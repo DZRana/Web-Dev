@@ -1,10 +1,11 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
 @import "https://fonts.googleapis.com/css?family=Noticia+Text";
-
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css";
 
 $text-color: white;
-$nav-border: 5px solid #ff5722; 
+$border-color: 5px solid #ff5722; 
 $font-stack: "Noticia Text", serif;
 $about-bg-color: #ff5722;
 $portfolio-bg-color: grey;
@@ -18,7 +19,7 @@ $footer-bg-color: #607d8b;
 }
 
 .navbar {
-  border-bottom: $nav-border;
+  border-bottom: $border-color;
 }
 
 .navbar-brand {
@@ -54,21 +55,19 @@ $footer-bg-color: #607d8b;
 #name {
   height: 100vh;
   padding-top: 30vh;
-  line-height: 400px;
-  text-shadow: 5px 5px black;
+  line-height: 400px; 
   h1 {
     font-size: 500%;
+    text-shadow: 5px 5px black;
   }
   h2 {
     padding-top: 25px;
+    text-shadow: 5px 5px black;
   }
-}
-
-#down:hover {
-  -webkit-animation: bounce 1s;
-  -moz-animation: bounce 1s;
-  -o-animation: bounce 1s;
-  animation: bounce 1s;
+  a {
+    color: white;
+    font-size: 50%;
+  }
 }
 
 #about {
@@ -101,14 +100,17 @@ $footer-bg-color: #607d8b;
   background-color: $portfolio-bg-color;
   height: 100vh;
   #row1 {
-    padding-top: 10vh;
+    padding-top: 8vh;
   }
   #row2 {
-    padding-top: 18vh;
+    padding-top: 4vh;
+  }
+  #row3 {
+    padding-top: 4vh;
   }
   img {
-    width: 600px;
-    height: 300px;
+    width: 500px;
+    height: 250px;
     border-radius: 20px;
   }
 }
@@ -128,7 +130,7 @@ $footer-bg-color: #607d8b;
 
 #contactRow {
   padding-top: 30vh;
-  h5 {
+  p {
     font-size: 200%;
     padding-left: 25%;
   }
@@ -144,10 +146,28 @@ form {
 
 #back {
   padding-top: 20vh;
-  font-size: 200%;
+  p {
+    font-size: 150%;
+  }
+  a {
+    color: white;
+    font-size: 50%;
+  }
 }
 
 footer {
+  padding: 2vh 0 10vh 0;
   overflow-x: hidden;
   background-color: $footer-bg-color;
+  border-top: $border-color;
+  h5 {
+    font-size: 200%;
+  }
+  a {
+    margin-right: 5%;
+  }
+}
+
+.fa {
+  font-size: 300%;
 }
