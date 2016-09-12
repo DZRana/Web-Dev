@@ -79,17 +79,24 @@ $footer-bg-color: #607d8b;
   img {
     width: 30%;
   }
+  h3 {
+    font-size: 250%;
+  }
 }
 
 #skills {
   overflow-x: hidden;
   height: 50vh;
+  h4 {
+    font-size: 250%;
+  }
 }
+
 .glyphicon {
   font-size: 500%;
 }
 
-.descriptions {
+.description {
   margin-top: 80px;
   font-size: 250%;
 }
@@ -126,6 +133,9 @@ $footer-bg-color: #607d8b;
 #contact {
   overflow-x: hidden;
   height: 100vh;
+  button {
+    color: black;
+  }
 }
 
 #contactRow {
@@ -156,7 +166,7 @@ form {
 }
 
 footer {
-  padding: 2vh 0 10vh 0;
+  padding: 2vh 0 5vh 0;
   overflow-x: hidden;
   background-color: $footer-bg-color;
   border-top: $border-color;
