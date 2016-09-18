@@ -3,12 +3,12 @@
 	"name": "Twitch Desktop Notifications",
 	"version": "1.0",
 
-	"default_locale": "en",
-	"description": "Desktop notifications for when a streamer that the user follows goes online",
-	"page_action": {
+	"description": "Desktop notifications for when a streamer that you follow goes online.",
+	"browser_action": {
+    "default_icon": "twitch_online.png",
+    "default_popup": "index.html"
 	},
 	"permissions": [
-		"notifications",
-		"https://ajax.googleapis.com/"
+		"notifications"
 	]
 }
