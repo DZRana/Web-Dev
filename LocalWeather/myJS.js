@@ -4,9 +4,10 @@ $(document).ready(function() {
 	var zip = prompt("Enter ZIP:");
 	var cTemp = 0;
 	var fTemp = 0;
-	apiURL = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip + "&APPID=58c95c512b8638a53d731b067640077e";
+	apiURL = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us&APPID=58c95c512b8638a53d731b067640077e";
 
 	$.getJSON(apiURL, function(data) {
+    console.log(data);
 		cTemp = Math.floor(data.main.temp/10);
 		fTemp = Math.floor((cTemp * 1.8) + 32);
 		html += "<h2>" + data.name + ", " + data.sys.country + "</h2>";
