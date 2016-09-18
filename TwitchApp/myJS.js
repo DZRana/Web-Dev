@@ -7,12 +7,12 @@ $(document).ready(function() {
 	var imgLink = "";
 	var streamerStatus = "";
 
-	$.getJSON("https://api.twitch.tv/kraken/users/toad555/follows/channels?callback=?", function(data) {
+	$.getJSON("https://api.twitch.tv/kraken/users/toad555/follows/channels?client_id=p06z5psry83ituhwdquv7yoi8ev5z7m", function(data) {
 		for (var i = 0; i < (data.follows).length; i++) {
 			//console.log(data.follows[i]);
 			streamerURL = data.follows[i].channel.url;
 			streamerName = streamerURL.substr(22);
-			streamerApiURL = "https://api.twitch.tv/kraken/streams/" + streamerName + "?callback=?";
+			streamerApiURL = "https://api.twitch.tv/kraken/streams/" + streamerName + "?client_id=p06z5psry83ituhwdquv7yoi8ev5z7m";
 			$.getJSON(streamerApiURL, function(streamerData) {		
 				streamerName = streamerData._links.channel.substr(38);
 				streamerURL = "https://www.twitch.tv/" + streamerName;
