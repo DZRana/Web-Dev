@@ -3,10 +3,11 @@
        2. keep track of streamers you already notified user about
        3. link in notification
 */
-var streamerURL = "";
+var streamerImg = "";
 var streamerName = "";
-var streamerApiURL = "";
+var streamerGame = "";
 var streamerStatus = "";
+var streamerURL = "";
 var onlineArr= [];
 var opt = {
   type: "basic",
@@ -16,25 +17,22 @@ var opt = {
 };
 
 function callAPI() {
-  $.getJSON("https://api.twitch.tv/kraken/users/toad555/follows/channels?client_id=7ebtgqdiu10i5ae2m6vji0waf2y4219", function(data) {
+  $.getJSON("https://api.twitch.tv/kraken/streams/followed?oauth_token=g7jju37h0orie9dy1b7k6gykj4mf37", function(data) {
     console.log(data);
-    for (var i = 0; i < (data.follows).length; i++) {
-      streamerURL = data.follows[i].channel.url;
-      streamerName = streamerURL.substr(22);
-      streamerApiURL = "https://api.twitch.tv/kraken/streams/" + streamerName + "?client_id=7ebtgqdiu10i5ae2m6vji0waf2y4219";
-      $.getJSON(streamerApiURL, function(streamerData) {    
-        streamerName = streamerData._links.channel.substr(38);
-        streamerURL = "https://www.twitch.tv/" + streamerName;
-        if (streamerData.stream !== null) {
-          opt.iconUrl = streamerData.stream.channel.logo;
-          opt.title = streamerName;
-          opt.message = streamerData.stream.game + ": " + streamerData.stream.channel.status;
-          chrome.notifications.create(opt);
-        }
-      }); 
+    for (var i = 0; i < (data.streams).length; i++) {     
+      streamerImg = data.streams[i].channel.logo;
+      streamerName = data.streams[i].channel.name;
+      streamerGame = data.streams[i].game + ": ";
+      streamerStatus = data.streams[i].channel.status;
+      streamerURL = data.streams[i].channel.url;
+
+      opt.iconUrl = streamerImg;
+      opt.title = streamerName;
+      opt.message = streamerGame + streamerStatus;
+      chrome.notifications.create(opt);
     }
   });
 }
 
 callAPI();
-window.setInterval(callAPI, 10000);
+//window.setInterval(callAPI, 10000);
