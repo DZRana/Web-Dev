@@ -9,6 +9,7 @@
     "default_popup": "index.html"
 	},
 	"permissions": [
-		"notifications"
+		"notifications",
+    "https://static-cdn.jtvnw.net/jtv_user_pictures/*"
 	]
 }
