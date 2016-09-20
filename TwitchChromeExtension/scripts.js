@@ -1,7 +1,7 @@
 /*
  TODO: 1. toggle button on/off -- DONE
        2. keep track of streamers you already notified user about
-       3. link in notification
+       3. link in notification -- DONE
        4. change browserAction icon between on/off states
 */
 Array.prototype.diff = function(a) {
@@ -28,11 +28,6 @@ var opt = {
 
 chrome.browserAction.onClicked.addListener(function() {
   toggle = !toggle;
-  function redirect(nId) {
-    chrome.notifications.onClicked.addListener(function() {
-      window.open(nId)
-    });
-  }
 
   function callAPI() {
     $.getJSON("https://api.twitch.tv/kraken/streams/followed?oauth_token=o6im0u0q5ts98lpnm8eei266uuk3ue", function(data) {
@@ -48,7 +43,7 @@ chrome.browserAction.onClicked.addListener(function() {
         opt.title = streamerName;
         opt.message = streamerStatus;
         opt.contextMessage = streamerGame;
-        chrome.notifications.create(streamerURL, opt, redirect);
+        chrome.notifications.create(streamerURL, opt);
       }
     });
   }
@@ -56,12 +51,15 @@ chrome.browserAction.onClicked.addListener(function() {
     //chrome.browserAction.setIcon({path: "twitch_online.png"});
     console.log("STARTED!");
     callAPI();
-    interval = window.setInterval(callAPI, 30000);
+    interval = window.setInterval(callAPI, 10000);
   }
   else {
     //chrome.browserAction.setIcon({path: "twitch_offline.png"});
     clearInterval(interval);
-    initialCall = true;
     console.log("STOPPED!");
   }
+});
+
+chrome.notifications.onClicked.addListener(function(nId) {
+    window.open(nId);
 });
