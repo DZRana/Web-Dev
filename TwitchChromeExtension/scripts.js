@@ -34,10 +34,12 @@ chrome.browserAction.onClicked.addListener(function() {
   toggle = !toggle;
 
   function makeNotification(streamerInfo) {
-    streamerImg = streamerInfo.channel.logo;     
-    streamerGame = streamerInfo.game;
+    streamerImg = streamerInfo.channel.logo; 
+    streamerName = streamerInfo.channel.name;    
     streamerStatus = streamerInfo.channel.status;
+    streamerGame = streamerInfo.game;
     streamerURL = streamerInfo.channel.url;
+    
     opt.iconUrl = streamerImg;
     opt.title = streamerName;
     opt.message = streamerStatus;
@@ -87,7 +89,7 @@ chrome.browserAction.onClicked.addListener(function() {
     //-------2
 
     callAPI();
-    interval = window.setInterval(callAPI, 60000);
+    interval = window.setInterval(callAPI, 300000);
   }
   else {
     //chrome.browserAction.setIcon({path: "twitch_offline.png"});
