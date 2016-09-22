@@ -5,7 +5,7 @@
 
 	"description": "Desktop notifications for when a streamer that you follow goes online.",
 	"browser_action": {
-    "default_icon": "twitch_offline.png"
+    "default_icon": "twitch_offline38.png"
 	},
   "background": {
     "scripts": ["jquery-3.1.0.min.js", "scripts.js"]

@@ -2,7 +2,7 @@
  TODO: 1. toggle button on/off -- DONE
        2. keep track of streamers you already notified user about -- DONE
        3. link in notification -- DONE
-       4. change browserAction icon between on/off states
+       4. change browserAction icon between on/off states -- DONE
 */
 Array.prototype.diff = function(a) {
   return this.filter(function(i) {
@@ -73,7 +73,7 @@ chrome.browserAction.onClicked.addListener(function() {
     });
   }
   if (toggle) {
-    //chrome.browserAction.setIcon({path: "twitch_online.png"});
+    chrome.browserAction.setIcon({path: "twitch_online38.png"});
     console.log("STARTED!");
     
     //-------2
@@ -92,7 +92,7 @@ chrome.browserAction.onClicked.addListener(function() {
     interval = window.setInterval(callAPI, 300000);
   }
   else {
-    //chrome.browserAction.setIcon({path: "twitch_offline.png"});
+    chrome.browserAction.setIcon({path: "twitch_offline38.png"});
     clearInterval(interval);
     initialOnline = []; //2
     initialCall = true; //2
