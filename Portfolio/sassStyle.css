@@ -78,15 +78,11 @@
   background-color: grey;
   height: 100vh; }
   #portfolio #row1 {
-    padding-top: 8vh; }
+    padding-top: 12vh; }
   #portfolio #row2 {
-    padding-top: 4vh; }
-  #portfolio #row3 {
-    padding-top: 4vh; }
-  #portfolio img {
-    width: 500px;
-    height: 250px;
-    border-radius: 20px; }
+    padding-top: 10vh; }
+  #portfolio video {
+    border-radius: 15px; }
 
 .thumb:hover {
   -webkit-transition: opacity .25s ease;

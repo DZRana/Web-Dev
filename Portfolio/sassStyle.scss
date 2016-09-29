@@ -107,18 +107,13 @@ $footer-bg-color: #607d8b;
   background-color: $portfolio-bg-color;
   height: 100vh;
   #row1 {
-    padding-top: 8vh;
+    padding-top: 12vh;
   }
   #row2 {
-    padding-top: 4vh;
+    padding-top: 10vh;
   }
-  #row3 {
-    padding-top: 4vh;
-  }
-  img {
-    width: 500px;
-    height: 250px;
-    border-radius: 20px;
+  video {
+    border-radius: 15px;
   }
 }
 
