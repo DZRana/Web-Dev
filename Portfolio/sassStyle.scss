@@ -107,17 +107,34 @@ $footer-bg-color: #607d8b;
   background-color: $portfolio-bg-color;
   height: 100vh;
   #row1 {
-    padding-top: 12vh;
+    padding-top: 8vh;
   }
   #row2 {
-    padding-top: 10vh;
+    padding-top: 2vh;
+  }
+  a {
+    text-decoration: none;
   }
   video {
     border-radius: 15px;
   }
+  .overlay .text {
+    position: relative;
+    bottom: 20vh;
+    left: 8vw;
+    width: 50%;
+    visibility: hidden;
+    font-size: 200%;
+  }
+  .overlay:hover .text {
+    visibility: visible;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 15px;
+  }
 }
 
-.thumb:hover {
+.fadeout:hover {
   -webkit-transition: opacity .25s ease;
   -moz-transition: opacity .25s ease;
   -o-transition: opacity .25s ease;
