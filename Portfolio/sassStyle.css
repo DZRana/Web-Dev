@@ -75,7 +75,8 @@
 #portfolio {
   overflow-x: hidden;
   background-color: grey;
-  height: 100vh; }
+  height: 100vh;
+  overflow-y: hidden; }
   #portfolio #row1 {
     padding-top: 8vh; }
   #portfolio #row2 {
