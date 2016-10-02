@@ -47,31 +47,30 @@
     text-shadow: 5px 5px black; }
   #name a {
     color: white;
-    font-size: 50%; }
+    font-size: 0.5vw; }
 
 #about {
   overflow-x: hidden;
-  overflow-y: hidden;
   height: 50vh;
   background-color: #ff5722;
-  padding: 80px 0px 50px 0px; }
+  padding: 10vh 0 10vh 0; }
   #about img {
     width: 30%; }
   #about h3 {
-    font-size: 250%; }
+    font-size: 2vw; }
 
 #skills {
   overflow-x: hidden;
   height: 50vh; }
   #skills h4 {
-    font-size: 250%; }
+    font-size: 2vw; }
 
 .glyphicon {
-  font-size: 500%; }
+  font-size: 3vw; }
 
 .description {
   margin-top: 80px;
-  font-size: 250%; }
+  font-size: 2vw; }
 
 #portfolio {
   overflow-x: hidden;
@@ -91,7 +90,7 @@
     left: 8vw;
     width: 50%;
     visibility: hidden;
-    font-size: 200%; }
+    font-size: 2vw; }
   #portfolio .overlay:hover .text {
     visibility: visible;
     color: white;
@@ -114,7 +113,7 @@
 #contactRow {
   padding-top: 30vh; }
   #contactRow p {
-    font-size: 200%;
+    font-size: 2vw;
     padding-left: 25%; }
 
 .input-width {
@@ -123,10 +122,10 @@
 #back {
   padding-top: 20vh; }
   #back p {
-    font-size: 150%; }
+    font-size: 1vw; }
   #back a {
     color: white;
-    font-size: 50%; }
+    font-size: 0.5vw; }
 
 footer {
   padding: 2vh 0 5vh 0;
@@ -134,11 +133,11 @@ footer {
   background-color: #607d8b;
   border-top: 5px solid #ff5722; }
   footer h5 {
-    font-size: 200%; }
+    font-size: 2vw; }
   footer a {
     margin-right: 5%; }
 
 .fa {
-  font-size: 300%; }
+  font-size: 3vw; }
 
 /*# sourceMappingURL=sassStyle.css.map */
