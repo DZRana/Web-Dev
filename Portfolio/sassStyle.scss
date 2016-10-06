@@ -72,6 +72,7 @@ $footer-bg-color: #607d8b;
 
 #about {
   overflow-x: hidden;
+  overflow-y: hidden;
   height: 50vh;
   background-color: $about-bg-color;
   padding: 10vh 0 10vh 0;
@@ -85,6 +86,7 @@ $footer-bg-color: #607d8b;
 
 #skills {
   overflow-x: hidden;
+  overflow-y: hidden;
   height: 50vh;
   h4 {
     font-size: 2vw;
@@ -144,6 +146,7 @@ $footer-bg-color: #607d8b;
 
 #contact {
   overflow-x: hidden;
+  overflow-y: hidden;
   height: 100vh;
   button {
     color: black;
