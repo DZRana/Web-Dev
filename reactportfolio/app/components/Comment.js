@@ -8,11 +8,10 @@ var Comment = React.createClass({
     this.setState({editing: true});
   },
   delete: function() {
-    alert("delete clicked");
+    this.props.deleteFromBoard(this.props.index);
   },
   save: function() {
-    var val = this.refs.newText.value;
-    console.log(val);
+    this.props.updateCommentText(this.props.index, this.refs.newText.value)
     this.setState({editing: false});
   },
   renderNormal: function() {

@@ -5,7 +5,7 @@ var Comment = require("./components/Comment")
 
 ReactDOM.render(
   <div>
-    <Comment>Leave a Note!</Comment>
+    <Board />
   </div>,
   document.getElementById("sticky-notes")
 );
