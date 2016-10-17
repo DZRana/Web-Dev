@@ -1,0 +1,27 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+
+$bg-color-board: lightblue;
+$default-margin: 50px auto;
+$bg-color-cmntContainer: darkgreen;
+$color-cmntText: pink;
+
+
+body {
+  background-color: grey;
+}
+
+.board {
+  background-color: $bg-color-board;
+  margin: 200px 400px 300px 400px;
+  padding: 20px 0px 20px 0px;
+}
+
+.commentContainer {
+  background-color: $bg-color-cmntContainer;
+  margin: $default-margin;
+  width: 200px;
+}
+
+.commentText {
+  color: $color-cmntText;
+}

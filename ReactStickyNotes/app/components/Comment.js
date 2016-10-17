@@ -11,13 +11,13 @@ var Comment = React.createClass({
     this.props.deleteFromBoard(this.props.index);
   },
   save: function() {
-    this.props.updateCommentText(this.props.index, this.refs.newText.value)
+    this.props.updateCommentText(this.refs.newText.value, this.props.index)
     this.setState({editing: false});
   },
   renderNormal: function() {
     return (
-      <div className="text-center">
-        <div>{this.props.children}</div>
+      <div className="commentContainer text-center">
+        <div className="commentText">{this.props.children}</div>
         <div className="row">
           <div className="col-md-6">
             <button onClick={this.edit} className="btn btn-primary">Edit</button>
@@ -31,7 +31,7 @@ var Comment = React.createClass({
   },
   renderForm: function() {
     return(
-      <div className="text-center">
+      <div className="commentContainer text-center">
         <textarea ref="newText" defaultValue={this.props.children}></textarea>
         <button onClick={this.save} className="btn btn-success">Save</button>
       </div>

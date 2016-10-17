@@ -4,20 +4,25 @@ var Comment = require("./Comment");
 var Board = React.createClass({
   getInitialState: function() {
     return {
-      comments: ["t1","t2","t3"]
+      comments: []
     }
+  },
+  add: function(text) {
+    var arr = this.state.comments;
+    arr.push(text);
+    this.setState({comments: arr});
   },
   deleteComment: function(i) {
     var arr = this.state.comments;
     arr.splice(i, 1);
     this.setState({comments: arr});
   },
-  updateComment: function(i, newText) {
+  updateComment: function(newText, i) {
     var arr = this.state.comments;
     arr[i] = newText;
     this.setState({comments: arr});
   },
-  eachComment: function(i, text) {
+  eachComment: function(text, i) {
     return (
       <Comment key={i} index={i} updateCommentText={this.updateComment} deleteFromBoard={this.deleteComment}>
         {text}
@@ -27,7 +32,10 @@ var Board = React.createClass({
   render: function() {
     return (
       <div>
-        {this.state.comments.map(this.eachComment)};
+        <button onClick={this.add.bind(null, "Default Text")} className="btn btn-info">Add New</button>
+        <div className="board">
+          {this.state.comments.map(this.eachComment)}
+        </div>
       </div>
     )
   }

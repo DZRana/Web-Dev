@@ -1,0 +1,18 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+body {
+  background-color: grey; }
+
+.board {
+  background-color: lightblue;
+  margin: 200px 400px 300px 400px;
+  padding: 20px 0px 20px 0px; }
+
+.commentContainer {
+  background-color: darkgreen;
+  margin: 50px auto;
+  width: 200px; }
+
+.commentText {
+  color: pink; }
+
+/*# sourceMappingURL=style.css.map */
