@@ -1,7 +1,15 @@
 var _Home = {
-  position: {
+  divStyle: {
     position: 'relative',
-    color: 'white'
+    color: 'white',
+    background: 'transparent',
+    paddingTop: '30vh'
+  },
+  nameStyle: {
+    textShadow: '5px 5px black'
+  },
+  subNameStyle: {
+    textShadow: '3px 3px black'
   }
 }
 
