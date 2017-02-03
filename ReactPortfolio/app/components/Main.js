@@ -16,7 +16,7 @@ var Main = React.createClass({
         <Navbar className="navbar-inverse navbar-fixed-top" style={navbarBorder}>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">React-Bootstrap</a>
+              <a href="#">DR</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
